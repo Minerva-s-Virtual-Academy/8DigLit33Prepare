@@ -1,0 +1,96 @@
+<div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: auto; padding: 20px;">
+    <header style="border-bottom: 3px solid #007BA6; padding-bottom: 10px; margin-bottom: 30px;">
+        <h1 style="color: #007ba6; margin-bottom: 5px;">Week 4: Workplace Communication &amp; Professional Tone</h1>
+        <p style="color: #00796b; font-weight: bold; font-style: italic;">Instruction: Complete this pre-learning module and test your judgment in the communication simulator. (Est. Time: 20 mins)</p>
+    </header>
+    
+    <section style="margin-bottom: 40px;">
+        <h2 style="color: #007ba6;">1. Watch &amp; Learn</h2>
+        <p style="color: #00796b;">Instruction: Watch the video below. Observe how professional communication inside a modern business differs completely from texting your friends.</p>
+        <div style="background-color: #f9f9f9; border: 2px dashed #ccc; padding: 40px; text-align: center; border-radius: 8px;">
+            <p style="color: #666;">[PASTE YOUR CANVAS STUDIO EMBED CODE HERE]</p>
+        </div>
+    </section>
+    
+    <section style="margin-bottom: 40px;">
+        <h2 style="color: #007ba6;">2. Key Concepts</h2>
+        <p>In modern businesses, teams are often remote or hybrid, meaning they rely heavily on collaborative tools (like Microsoft Teams, Slack, or email). To collaborate effectively, you must learn to choose the right <strong style="color: #c62828;">Communication Method</strong> depending on the situation.</p>
+        <p>Using text chat for a massive project review can lead to confusion, while setting up a 1-hour video call just to ask for a file location is highly inefficient. You must evaluate whether a situation requires an instant, live discussion (synchronous) or a message that people can reply to later in their own time (asynchronous).</p>
+        
+        <div style="background-color: #eef7fa; padding: 20px; border-radius: 8px; border-left: 5px solid #007BA6; margin: 20px 0;">
+            <h4 style="margin-top: 0; color: #007ba6;">Informal Communication &amp; Digital Tone</h4>
+            <p>While workspace chat apps look like social media, they are still formal environments. You must make professional judgments regarding <strong style="color: #c62828;">Informal Communication</strong> markers. Emojis, exclamation marks, or memes can help show a friendly, supportive tone in a quick message, but using them when discussing serious mistakes, contracts, or customer complaints can make you look unprofessional and damage your credibility.</p>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 40px; background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+        <h2 style="color: #007ba6; margin-top: 0;">3. Interactive Tool: The Communication Simulator</h2>
+        <p style="color: #00796b;">Instruction: Imagine you are a Project Manager. Read the work scenario below, then choose the best communication method and tone combination to see the professional evaluation.</p>
+        
+        <div style="background-color: white; border: 1px solid #ccc; padding: 15px; border-radius: 6px; margin-bottom: 15px;">
+            <p style="margin: 0; font-weight: bold; color: #333;">Current Workplace Scenario:</p>
+            <p style="margin: 5px 0 0 0; color: #555;"><em>"A major bug has just crashed your company's app, affecting thousands of paying customers. You need to pull the core engineering team together immediately to solve it."</em></p>
+        </div>
+
+        <div style="margin-bottom: 15px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <button onclick="evaluateComms('email_casual')" style="background-color: #007BA6; color: white; border: none; padding: 10px 12px; font-weight: bold; border-radius: 4px; cursor: pointer;">Option A: Email + Emojis</button>
+            <button onclick="evaluateComms('video_formal')" style="background-color: #007BA6; color: white; border: none; padding: 10px 12px; font-weight: bold; border-radius: 4px; cursor: pointer;">Option B: Video Call + Formal Tone</button>
+            <button onclick="evaluateComms('chat_meme')" style="background-color: #007BA6; color: white; border: none; padding: 10px 12px; font-weight: bold; border-radius: 4px; cursor: pointer;">Option C: Group Chat + Meme</button>
+        </div>
+
+        <div id="simFeedbackBox" style="background-color: #fff3e0; border: 2px dashed #ff9800; padding: 15px; border-radius: 6px; min-height: 80px; transition: all 0.3s ease;">
+            <p style="text-align: center; color: #666; font-style: italic; margin-top: 15px;">Select an option above to simulate your management decision!</p>
+        </div>
+
+        <script>
+            function evaluateComms(choice) {
+                var box = document.getElementById('simFeedbackBox');
+                if (choice === 'email_casual') {
+                    box.style.border = "2px solid #c62828";
+                    box.style.backgroundColor = "#ffebee";
+                    box.innerHTML = "<h4 style='color: #c62828; margin-top: 0;'>⚠️ Poor Choice: Ineffective Communication</h4>" +
+                                    "<p style='margin: 0;'><strong>Feedback:</strong> Emails are asynchronous—engineers might not see it for hours! Adding emojis like 😂 or 😱 to an active crisis reduces your professional authority and sounds panicked rather than helpful.</p>";
+                } else if (choice === 'video_formal') {
+                    box.style.border = "2px solid #00796B";
+                    box.style.backgroundColor = "#e0f2f1";
+                    box.innerHTML = "<h4 style='color: #00796B; margin-top: 0;'>🎯 Excellent Choice: Professional Standard</h4>" +
+                                    "<p style='margin: 0;'><strong>Feedback:</strong> A live video or audio call is the perfect tool for an immediate crisis because teams can troubleshoot together in real time. A calm, direct, and formal tone reassures the team and keeps them focused on the solution.</p>";
+                } else if (choice === 'chat_meme') {
+                    box.style.border = "2px solid #c62828";
+                    box.style.backgroundColor = "#ffebee";
+                    box.innerHTML = "<h4 style='color: #c62828; margin-top: 0;'>❌ Critical Error: Unprofessional Tone</h4>" +
+                                    "<p style='margin: 0;'><strong>Feedback:</strong> While a group chat is fast, posting a funny meme during an operational disaster tells your team and managers that you aren't taking the problem seriously. It compromises your digital reputation.</p>";
+                }
+            }
+        </script>
+    </section>
+    
+    <section style="margin-bottom: 40px;">
+        <h2 style="color: #007ba6;">4. Quick Check</h2>
+        <p style="color: #00796b;">Instruction: Tap the questions below to reveal the answers and check your understanding.</p>
+        
+        <div style="margin-bottom: 10px;">
+            <details style="background: #fff; border: 1px solid #007BA6; border-radius: 4px; padding: 10px; cursor: pointer;">
+                <summary style="font-weight: bold; color: #007ba6;">When is it appropriate to use informal communication, like a thumbs-up emoji, at work?</summary>
+                <p style="padding-top: 10px; border-top: 1px solid #eee;">It is appropriate in <strong>low-stakes, day-to-day chat channels</strong>—for example, to quickly confirm you have read a routine message or to say thank you to a colleague. It acts as a helpful digital shorthand when deep detail isn't required.</p>
+            </details>
+        </div>
+        
+        <div style="margin-bottom: 10px;">
+            <details style="background: #fff; border: 1px solid #007BA6; border-radius: 4px; padding: 10px; cursor: pointer;">
+                <summary style="font-weight: bold; color: #007ba6;">Why shouldn't you deliver negative project feedback via a text-only platform?</summary>
+                <p style="padding-top: 10px; border-top: 1px solid #eee;">Text lacks <strong>vocal tone and body language</strong>. A short, constructive comment can easily be misread as angry or insulting, which hurts team morale. Complex or sensitive feedback should be handled via audio or video calls.</p>
+            </details>
+        </div>
+    </section>
+    
+    <section style="background-color: #e0f2f1; padding: 25px; border-radius: 8px; border: 2px solid #00796B;">
+        <h2 style="color: #007ba6; margin-top: 0;">5. Pre-Lesson Task</h2>
+        <p style="color: #00796b; font-weight: bold;">Instruction: Complete this thinking challenge before our live lesson.</p>
+        <ul style="margin-bottom: 0;">
+            <li><strong>Analyze your habits:</strong> Think about the platform you use most to talk to friends (e.g., WhatsApp, Discord). How many shorthand words or emojis do you use in a single paragraph?</li>
+            <li><strong>The Translation Test:</strong> Imagine you had to send that exact same message to your school Headteacher. Which words or formatting characters would you have to remove to make it respectful and professional?</li>
+            <li><strong>Get Ready:</strong> In our live session, we are going to dive into a real-time workplace communication simulation where your choice of channel and tone will determine your project's success!</li>
+        </ul>
+    </section>
+</div>
